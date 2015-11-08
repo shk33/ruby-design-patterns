@@ -1,6 +1,6 @@
-require "./employee"
 require "./payroll"
 require "./tax_man"
+require "./employee"
 
 fred = Employee.new "Fred", "Operator", 30000
 payroll = Payroll.new
