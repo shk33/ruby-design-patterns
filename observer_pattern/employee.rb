@@ -1,14 +1,16 @@
 require "./subject"
 
-class Employee < Subject
+class Employee
+  include Subject
+
   attr_reader :name, :title
   attr_reader :salary
 
   def initialize name, title, salary
+    super()
     @name      = name
     @title     = title
     @salary    = salary
-    @observers = []
   end
 
   def salary= new_salary

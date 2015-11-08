@@ -1,6 +1,6 @@
-class Subject
+module Subject
   def initialize
-    @observer = []
+    @observers = []
   end
 
   def add_observer observer
